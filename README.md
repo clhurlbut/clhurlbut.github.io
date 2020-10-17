@@ -13,6 +13,4 @@ https://clhurlbut.github.io/
 ## Contribution
 Made with :potato: by Cassie Hurlbut
 
-testing please
-
 
