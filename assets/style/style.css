@@ -1,20 +1,20 @@
+
 body {
   padding: 0;
-  margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 150%;
   color: #333;
-  background: #efeee7;
+  background-color: blanchedalmond;
 }
 
 header {
-  background-color: bisque;
+  background-image: linear-gradient(bottom left, white, red, black);
+  background-size: cover;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  top: 0;
 }
 
 header nav {
@@ -34,27 +34,38 @@ header nav ul li a {
   font-weight: bolder;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #d21034;
 }
 
-header nav ul li a:hover {
-  border-radius: 15px;
-  text-shadow: none;
+
+.hero {
+  background-image: url(./assets/imgs/hudsonBG.jpg);
 }
+
+.hero h2 {
+  padding: 15px 10px;
+  text-align: right;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  font-stretch: semi-expanded;
+  color: #d21034;
+  text-shadow: black;
+}
+
 
 h1 {
   padding: 20px 0;
-  margin: 0;
-  margin-bottom: 20px;
   font-size: 28px;
-  text-align: left;
+  text-align: start;
 }
 
-h2 {
+.title {
   font-size: 24px;
-}
-
-a {
   color: #d21034;
+  text-shadow: black;
+  text-align: left;
+  padding: 20px 15px;
+ 
 }
 
 footer {
@@ -67,18 +78,53 @@ footer h3 {
   font-size: small;
 }
 
-#main-bio, #contact-info, #bio-image {}
-
 #main-bio {
-  width: 60%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: auto;
+  background: linear-gradient(bottom right pink, red, pink);
 }
 
-#contact-info {
-  width: 30%;
+#my-work {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+  font-size: large;
+  color: #d21034;
+
 }
 
+#my-work img {
+  height: 100px;
+  width: auto;
+}
 #bio-image {
   width: 200px;
   height: 200px;
   margin-right: 20px;
+}
+
+#contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#contact-info ul {
+display: flex;
+justify-content: center;
+gap: 40px;
+  list-style: none;
+  padding: 20px;
+}
+
+
+@media (max-width: 800px) {
+  #main-bio {
+    flex-direction: column;
+  }
 }
