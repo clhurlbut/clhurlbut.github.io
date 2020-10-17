@@ -1,130 +1,82 @@
+* {
+  box-sizing: border-box;
+}
 
 body {
-  padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 150%;
-  color: #333;
-  background-color: blanchedalmond;
+  font-family: Arial;
+  margin: 0;
 }
 
 header {
-  background-image: linear-gradient(bottom left, white, red, black);
-  background-size: cover;
-  padding: 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-header nav {
-  margin: 9px 0;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
+  background-image: linear-gradient(Red, White, Black);
   padding: 15px;
-  font-weight: bolder;
-  font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #d21034;
-}
-
-
-.hero {
-  background-image: url(./assets/imgs/hudsonBG.jpg);
-}
-
-.hero h2 {
-  padding: 15px 10px;
-  text-align: right;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 25px;
-  font-stretch: semi-expanded;
-  color: #d21034;
-  text-shadow: black;
-}
-
-
-h1 {
-  padding: 20px 0;
-  font-size: 28px;
-  text-align: start;
-}
-
-.title {
-  font-size: 24px;
-  color: #d21034;
-  text-shadow: black;
   text-align: left;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  flex: wrap;
+  justify-content: flex-end;
+  background-color: #333;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+.placeholder {
+  background-color: #aaa;
+  width: 100%;
   padding: 20px 15px;
- 
 }
 
 footer {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-footer h3 {
+  justify-content: space-between;
   font-size: small;
+  width: 100%;
+  padding: 5px 20px;
 }
 
-#main-bio {
+#bio-img {
   height: 200px;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  margin: auto;
-  background: linear-gradient(bottom right pink, red, pink);
-}
-
-#my-work {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  padding: 20px;
-  margin: auto;
-  font-size: large;
-  color: #d21034;
-
-}
-
-#my-work img {
-  height: 100px;
   width: auto;
-}
-#bio-image {
-  width: 200px;
-  height: 200px;
-  margin-right: 20px;
+  padding: 15px;
 }
 
-#contact-info {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+#work-img {
+  height: 150px;
+  width: auto;
+  padding: 15px;
 }
 
-#contact-info ul {
-display: flex;
-justify-content: center;
-gap: 40px;
-  list-style: none;
-  padding: 20px;
-}
-
-
-@media (max-width: 800px) {
-  #main-bio {
+@media screen and (max-width: 700px) {
+  .main-container, .navbar {
     flex-direction: column;
   }
 }
