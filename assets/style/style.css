@@ -5,36 +5,40 @@
 body {
   font-family: Arial;
   margin: 0;
+  background: #5A5B6A;
 }
 
 header {
   padding: 15px;
   text-align: left;
   font-weight: bolder;
-  color: black;
+  color: #751820;
+  
 }
 
 .navbar {
   display: flex;
   flex: wrap;
   justify-content: flex-end;
-  background-color: #333;
+  background-color: #751820;
 }
 
 .navbar a {
-  color: white;
+  color: #FDEEC8;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #511A1C;
   color: black;
 }
 
 .hero {
+  background-image: url(../imgs/heroBG.jpg);
   text-align: right;
+  color: #FDEEC8;
   font-size: larger;
   font-style: oblique;
   padding: 60px 40px 60px 140px;
@@ -46,9 +50,28 @@ header {
   float: left;
   width: max-content;
   padding: 20px 25px;
-  border-right: 3px solid black;
+  border-right: 3px solid #511A1C;
+  color: #511A1C;
+}
+/** adding this to create a span of images across the bottom of my bio **/
+
+.bio-img-container {
+  float: left;
+  align-items: baseline;
+  width: 25%;
+  padding: 5px;
+
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#my-work {
+  background: #8789A3;
+}
 
 .secondary-container {
   display: flex;
@@ -59,9 +82,9 @@ header {
 }
 
 .secondary-item {
-  background-color: #aaa;
+  background-color: #FDEEC8;
   padding: 20px 15px;
-  border: 4px solid purple;
+  border: 4px solid #511A1C;
   border-radius: 15px;
   width: auto;
   height: fit-content;
@@ -69,10 +92,16 @@ header {
   text-align: center;
 }
 
-.content {
+#main-bio p, #main-bio img {
   padding: 40px 15px 0px 15px;
   display: flex;
+  color: #CAB99D;
+}
 
+#my-work p {
+  padding: 40px 15px 0px 15px;
+  display: flex;
+  color: #511A1C;
 }
 
 .contacts {
@@ -82,6 +111,11 @@ header {
   padding: 40px 5px 0px 5px;
 }
 
+.contacts a {
+  color: #511A1C;
+  font-weight: bolder;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +123,7 @@ footer {
   font-size: small;
   width: 100%;
   padding: 5px 20px;
+  background: #464754;
 }
 
 
@@ -108,6 +143,5 @@ footer {
   .navbar {
     flex-direction: column;
   }
-
   
 }
