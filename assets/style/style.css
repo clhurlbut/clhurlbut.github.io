@@ -84,7 +84,7 @@ header nav ul li a:hover {
 }
 
 #main-bio p {
-  padding: 0px 150px 10px 150px;
+  padding: 0px 80px 10px 80px;
 }
 
 /** adding this to create a span of images across the bottom of my bio **/
@@ -110,12 +110,13 @@ header nav ul li a:hover {
 }
 
 .work-container {
-  padding: 0 100px;
+  padding: 10px 80px;
   display: grid;
-  grid-template-columns: repeat(3, 5fr);
-  grid-template-rows: repeat(3, 5fr);
+  grid-template-columns: repeat(3, 10fr);
+  grid-template-rows: repeat(3, 10fr);
   gap: 10px;
   grid-auto-flow: dense;
+  height: 300px;
 }
 
 .work-item {
@@ -130,7 +131,7 @@ header nav ul li a:hover {
 
 .contacts {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 5px 5px 0px 5px;
 }
