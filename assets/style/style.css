@@ -91,6 +91,7 @@ header nav ul li a:hover {
 }
 
 #my-work {
+  padding: 5px;
   background: #8789A3;
 }
 
@@ -114,22 +115,17 @@ header nav ul li a:hover {
 }
 
 #main-bio p, #main-bio img {
-  padding: 40px 15px 0px 15px;
+  padding: 5px 15px 0px 15px;
   display: flex;
   color: #CAB99D;
-}
-
-#my-work p {
-  padding: 40px 15px 0px 15px;
-  display: flex;
-  color: #511A1C;
+  text-align: center;
 }
 
 .contacts {
   display: flex;
   flex: wrap;
   justify-content: space-evenly;
-  padding: 40px 5px 0px 5px;
+  padding: 5px 5px 0px 5px;
 }
 
 .contacts a {
@@ -158,12 +154,6 @@ footer div {
   line-height: 1.5;
   font-size: 15px;
   color: black;
-}
-
-#bio-img {
-  height: 200px;
-  width: auto;
-  padding: 15px;
 }
 
 #work-img {
