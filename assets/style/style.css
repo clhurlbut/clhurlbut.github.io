@@ -9,31 +9,44 @@ body {
 }
 
 header {
-  padding: 15px;
-  text-align: left;
-  font-weight: bolder;
-  color: #751820;
-  
-}
-
-.navbar {
+  padding: 10px 35px;
   display: flex;
-  flex: wrap;
-  justify-content: flex-end;
-  background-color: #751820;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.navbar a {
+header h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #751820;
+  padding: 10px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(235, 224, 224, 0.5);
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
   color: #FDEEC8;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.navbar a:hover {
-  background-color: #511A1C;
+header nav ul li a:hover {
+  background: #511A1C;
   color: black;
+  border-radius: 15px;
+  text-shadow: none;
 }
+
 
 .hero {
   background-image: url(../imgs/heroBG.jpg);
@@ -46,13 +59,21 @@ header {
 
 
 .title {
-  position: relative;
-  float: left;
-  width: max-content;
-  padding: 20px 25px;
-  border-right: 3px solid #511A1C;
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-gap: 20px;
+  width: 100%;
   color: #511A1C;
 }
+
+.title::before, .title::after {
+  content: '';
+  border-top: 3px solid #751820;
+}
+
+
 /** adding this to create a span of images across the bottom of my bio **/
 
 .bio-img-container {
@@ -122,10 +143,22 @@ footer {
   justify-content: space-between;
   font-size: small;
   width: 100%;
-  padding: 5px 20px;
+  padding: 5px 30px;
   background: #464754;
 }
 
+
+footer h3 {
+  color: black;
+  font-size: 15px;
+  margin: 0;
+}
+
+footer div {
+  line-height: 1.5;
+  font-size: 15px;
+  color: black;
+}
 
 #bio-img {
   height: 200px;
@@ -140,8 +173,29 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-  }
+  
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+}
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+header nav ul li a {
+    font-size: 20px;
+}
+footer h3,
+footer div {
+    text-align: center;
+    width: 100%;
+}
   
 }
