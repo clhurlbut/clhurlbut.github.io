@@ -8,9 +8,9 @@ body {
 }
 
 header {
-  background-image: linear-gradient(Red, White, Black);
   padding: 15px;
   text-align: left;
+  font-weight: bolder;
   color: black;
 }
 
@@ -40,22 +40,15 @@ header {
   padding: 60px 40px 60px 140px;
 }
 
-.primary-container {
-  display: flex;
-  flex-wrap: wrap;
+
+.title {
+  position: relative;
+  float: left;
+  width: max-content;
+  padding: 20px 25px;
+  border-right: 3px solid black;
 }
 
-.side {
-  flex: 30%;
-  padding: 20px;
-  background-color: peru;
-}
-
-.main {
-  flex: 70%;
-  padding: 20px;
-  background-color: burlywood;
-}
 
 .secondary-container {
   display: flex;
@@ -76,6 +69,19 @@ header {
   text-align: center;
 }
 
+.content {
+  padding: 40px 15px 0px 15px;
+  display: flex;
+
+}
+
+.contacts {
+  display: flex;
+  flex: wrap;
+  justify-content: space-evenly;
+  padding: 40px 5px 0px 5px;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +90,7 @@ footer {
   width: 100%;
   padding: 5px 20px;
 }
+
 
 #bio-img {
   height: 200px;
@@ -97,8 +104,10 @@ footer {
   padding: 15px;
 }
 
-@media screen and (max-width: 700px) {
-  .main-container, .navbar {
+@media screen and (max-width: 800px) {
+  .navbar {
     flex-direction: column;
   }
+
+  
 }
