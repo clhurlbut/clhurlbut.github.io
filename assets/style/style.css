@@ -19,7 +19,7 @@ header h1 {
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
-  color: rgb(177, 174, 174);
+  color: rgb(240, 233, 233);
   padding: 10px;
   margin: 0;
   text-shadow: 0 0 10px #511A1C;
@@ -136,6 +136,7 @@ header nav ul li a:hover {
 .work-item a {
   background-color: #FDEEC8;
   font-weight: bolder;
+  border-radius: 3px;
 }
 .contacts {
   display: flex;
