@@ -10,6 +10,11 @@ A website offering a professional portfolio, bio, contact and additional pages.
 ## Website
 https://clhurlbut.github.io/
 
+## Screenshot
+
+![Alt text](/assets/imgs/screenshotdeployedgitpage.png?raw=true "Screenshot of Deployed Gitpage")
+
+
 ## Contribution
 Made with :potato: by Cassie Hurlbut
 
