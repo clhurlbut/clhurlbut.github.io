@@ -2,13 +2,21 @@
   box-sizing: border-box;
 }
 
+/** start body style **/
+
 body {
   font-family: Arial;
   margin: 0;
   background: #5A5B6A;
 }
 
+/** end body style **/
+
+/** start header style **/
+
 header {
+  background: rgb(9, 4, 94);
+  background: linear-gradient(308deg, rgba(9, 4, 94, 1) 0%, rgba(34, 18, 70, 1) 35%, rgba(77, 120, 129, 1) 100%);
   padding: 10px 35px;
   display: flex;
   justify-content: space-between;
@@ -31,22 +39,27 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  padding: 5px 5px;
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  padding: 5px 20px;
   font-weight: lighter;
-  color: #FDEEC8;
-  font-size: 1.5vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #CAB99D;
+  font-size: 20px;
+  text-shadow: 0 0 10px #511A1C(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
   background: #511A1C;
-  color: black;
-  border-radius: 15px;
+  color: #CAB99D;
+  border-radius: 5px;
   text-shadow: none;
 }
+
+/** end header style **/
+
+/** start hero style **/
 
 .hero {
   background-image: url(../imgs/newheroBG.jpg);
@@ -57,6 +70,10 @@ header nav ul li a:hover {
   font-style: oblique;
   padding: 150px 40px 50px 140px;
 }
+
+/** end hero style **/
+
+/** start heading style **/
 
 .title {
   display: grid;
@@ -72,6 +89,10 @@ header nav ul li a:hover {
   content: '';
   border-top: 3px solid #751820;
 }
+
+/** end heading style **/
+
+/** start main bio and image styles **/
 
 #main-bio p, #main-bio img {
   display: flex;
@@ -104,6 +125,10 @@ header nav ul li a:hover {
 
 /** -- internet said to add a clear-fix so I did! **/
 
+/** end main bio and image styles **/
+
+/** start my work style **/
+
 #my-work {
   padding: 5px;
   background: #8789A3;
@@ -116,39 +141,89 @@ header nav ul li a:hover {
   grid-template-rows: repeat(3, 10fr);
   gap: 10px;
   grid-auto-flow: dense;
-  height: 300px;
+  height: 500px;
 }
 
 .work-item {
   display: flex;
-  border: #FDEEC8 4px solid;
+  border: #511A1C 4px solid;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
-.item1 { grid-area: 1 / 1 / 3 / 3; }
-.item2 { grid-area: 1 / 3 / 2 / 4; }
-.item3 { grid-area: 2 / 3 / 3 / 4; }
-.item4 { grid-area: 3 / 1 / 4 / 2; }
-.item5 { grid-area: 3 / 2 / 4 / 4; }
-
-.work-item a {
-  background-color: #FDEEC8;
+.work-title {
+  color: #751820;
+  font-size: 10px;
   font-weight: bolder;
-  border-radius: 3px;
+  font-style: italic;
+  text-decoration: #111111;
+  background-color: #CAB99D;
+  border-radius: 2px;
+  visibility: hidden;
+  text-transform: uppercase;
+  opacity: 0;
 }
-.contacts {
+
+.work-item:hover .work-title{
+  visibility: visible;
+  opacity: 1;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.item2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.item3 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.item4 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.item5 {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+
+/** end my work style **/
+
+/** start contacts style **/
+
+.contacts ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 5px 5px 0px 5px;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 5px 5px;
 }
 
-.contacts a {
+.contacts ul li a {
   color: #511A1C;
   font-weight: bolder;
+  font-size: 20px;
+  text-shadow: 0 0 10px #CAB99D;
+  padding: 15x 10x;
 }
+
+.contacts ul li a:hover {
+  background: #CAB99D;
+  color: #511A1C;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+/** end contacts style **/
+
+/** start footer style **/
 
 footer {
   display: flex;
@@ -172,11 +247,9 @@ footer div {
   color: black;
 }
 
-#work-img {
-  height: 150px;
-  width: auto;
-  padding: 15px;
-}
+/** end footer style **/
+
+/** start media queries **/
 
 @media screen and (max-width: 800px) {
   header {
@@ -187,24 +260,30 @@ footer div {
   header h1 {
     width: 100%;
     text-align: center;
+    border-bottom: #751820 3px solid;
   }
   header nav ul {
-    margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
   header nav ul li a {
+    font-size: 10px;
+  }
+  .contacts ul {
+    width: 100%;
+    justify-content: center;
+  }
+  .contacts ul li a {
     font-size: 20px;
+    padding: 5px 5px;
   }
   footer h3, footer div {
     text-align: center;
     width: 100%;
   }
-
   .work-container {
     padding: 10px 10px;
   }
-
   #main-bio p {
     padding: 10px 10px;
   }
