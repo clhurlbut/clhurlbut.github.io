@@ -151,7 +151,7 @@ header nav ul li a:hover {
   border-radius: 4px;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
 .work-title {
