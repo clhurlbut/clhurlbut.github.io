@@ -154,22 +154,18 @@ header nav ul li a:hover {
   justify-content: left;
 }
 
-.work-title {
-  color: #751820;
-  font-size: 10px;
-  font-weight: bolder;
-  font-style: italic;
-  text-decoration: #111111;
-  background-color: #CAB99D;
-  border-radius: 2px;
-  visibility: hidden;
-  text-transform: uppercase;
-  opacity: 0;
+.work-item:hover {
+  box-shadow: 0 10px 20px rgba(241, 239, 239, 0.19), 0 6px 6px rgba(212, 206, 206, 0.23);
 }
 
-.work-item:hover .work-title{
-  visibility: visible;
-  opacity: 1;
+.work-title {
+  font-style: italic;
+  font-size: 16px;
+  color: #511A1C;
+  background-color: #8789A3;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-weight: bolder;
 }
 
 .item1 {
@@ -267,7 +263,7 @@ footer div {
     justify-content: center;
   }
   header nav ul li a {
-    font-size: 10px;
+    font-size: 17px;
   }
   .contacts ul {
     width: 100%;
