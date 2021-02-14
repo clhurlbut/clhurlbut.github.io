@@ -12,7 +12,7 @@ https://clhurlbut.github.io/
 
 ## Screenshot
 
-![Alt text](/assets/imgs/screenshotdeployedgitpage.png?raw=true "Screenshot of Deployed Gitpage")
+![Screenshot of Gitpage!](/assets/imgs/screenshotdeployedgitpage.png?raw=true "Screenshot of Deployed Gitpage")
 
 
 ## Contribution
